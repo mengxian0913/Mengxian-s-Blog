@@ -5,7 +5,13 @@ $babyblue: #7FC0E6;
 $card: rgba(99, 145, 158, 0.77);
 $nav_color: rgba(225, 215, 225, 0.3);
 $light: #EEEEEE;
-
+$bg-color: #1f242d;
+$second-bg-color: #323946;
+$text_color: #FFF;
+$greenblue: rgba(12, 70, 103, 0.644);
+// $progress: rgba(58, 120, 168, 0.644);
+$progress: rgba(73, 175, 231, 0.777);
+ 
 
 html{
     height: 100%;
@@ -18,13 +24,15 @@ html{
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     text-decoration: none;
+    scroll-behavior: smooth;
+    border: none;
 }
 
 :root    
 {
     min-height: 100vh;
     overflow-x: hidden;
-    background-color: $dark;
+    background-color: $bg-color;
     color: #FFF;
 }
 
@@ -57,14 +65,15 @@ html{
 
 nav{
 
+    // height: 9vh;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 99;
-    background-color: $dark;
+    background-color: $bg-color;
     padding: 16px 32px;
-    border-bottom: 3px rgba(12, 70, 103, 0.644) solid;
+    border-bottom: 3px $greenblue solid;
     backdrop-filter: blur(0.5px);
 
     
@@ -213,6 +222,7 @@ nav{
 
 
 .sec1{
+    // @include bgsetting(100vw, 100vh, url(../../images/background-img/stars-dark-sky-beautiful-stunning.jpg), scroll, repeat, contain);
     position: relative;
     height: 100vh;
     width: 100vw;
@@ -223,8 +233,13 @@ nav{
     .home{
         height: 70vh;
         min-width: 70vw;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+
         .ph-container{
-            @include tocenter();
             height: 20vh;
             width: auto;
             border-radius: 100%;
@@ -237,12 +252,8 @@ nav{
         }
 
         h2{
-            position: absolute;
-            top:65%;
-            left: 50%;
-            transform: translate(-50%, -65%);
-            
-            font-size: 30px;
+            margin-top: 25px;
+            font-size: 1.5em;
         }
     }
 
@@ -298,53 +309,76 @@ nav{
 }
 
 .sec2{
-    position: relative;
-    height: 50vh;
     width: 100vw;
-    background-color: #315075af;
-
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    article{
-        height: auto;
-        width: 50vw;
-        padding: 0 20px;
-        line-height: 1.8;
-        
-        p{
-            font-size: 16px;
-        }
-    }
-
-    .ability{
-        height: 100%;
-        width: 50vw;
+    min-height: 50vh;
+    padding: 5px;
+    .skills{
+        width: 100%;
+        min-height: 50vh;
+        background-color: $second-bg-color;
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        color: $dark;
+        .skill{
+            display: flex;
+            width: 420px;
+            padding: 50px 0;
+            border-radius: 8px;
+            background: $second-bg-color;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
 
-        .programming{
-            margin: 0 5px;
-            width: 150px;
-            height: 150px;
-            border-radius: 99%;
-            background-color: #FFF;
-        }
+            .circular-progress{
+                position: relative;
+                height: 250px;
+                width: 250px;
+                background-color: #f0ff;
+                border-radius: 50%;
+                background: conic-gradient($progress 3.6deg, #ededed 0deg);
+                display: flex;
+                align-items: center;
+                justify-content: center;
 
-        .web{
-            margin: 0 5px;
-            width: 150px;
-            height: 150px;
-            border-radius: 99%;
-            background-color: #FFF;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    height: 210px;
+                    width: 210px;
+                    border-radius: 50%;
+                    background-color: #fff;
+                }
+
+                .progress-value{
+                    position: relative;
+                    font-size: 40px;
+                    font-weight: 600;
+                    color: #4b94b4;
+                }
+                
+            }
+
+            .text{
+                font-size: 30px;
+                font-weight: 500;
+                color: $text_color;
+                margin-top: 15px;
+            }
         }
 
     }
 }
+
+
+
+
+
+
+
+
+
 
 .sec4{
     min-height: 100vh;

@@ -10,12 +10,14 @@ html {
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
   text-decoration: none;
+  scroll-behavior: smooth;
+  border: none;
 }
 
 :root {
   min-height: 100vh;
   overflow-x: hidden;
-  background-color: #212121;
+  background-color: #1f242d;
   color: #FFF;
 }
 
@@ -31,7 +33,7 @@ nav {
   left: 0;
   right: 0;
   z-index: 99;
-  background-color: #212121;
+  background-color: #1f242d;
   padding: 16px 32px;
   border-bottom: 3px rgba(12, 70, 103, 0.644) solid;
   -webkit-backdrop-filter: blur(0.5px);
@@ -172,12 +174,13 @@ nav .nav-container .hamburger.is-active:hover span {
 .sec1 .home {
   height: 70vh;
   min-width: 70vw;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .sec1 .home .ph-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   height: 20vh;
   width: auto;
   border-radius: 100%;
@@ -188,11 +191,8 @@ nav .nav-container .hamburger.is-active:hover span {
   width: auto;
 }
 .sec1 .home h2 {
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -65%);
-  font-size: 30px;
+  margin-top: 25px;
+  font-size: 1.5em;
 }
 .sec1 .arrow {
   position: absolute;
@@ -237,44 +237,60 @@ nav .nav-container .hamburger.is-active:hover span {
   }
 }
 .sec2 {
-  position: relative;
-  height: 50vh;
   width: 100vw;
-  background-color: rgba(49, 80, 117, 0.6862745098);
+  min-height: 50vh;
+  padding: 5px;
+}
+.sec2 .skills {
+  width: 100%;
+  min-height: 50vh;
+  background-color: #323946;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.sec2 article {
-  height: auto;
-  width: 50vw;
-  padding: 0 20px;
-  line-height: 1.8;
-}
-.sec2 article p {
-  font-size: 16px;
-}
-.sec2 .ability {
-  height: 100%;
-  width: 50vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  color: #212121;
 }
-.sec2 .ability .programming {
-  margin: 0 5px;
-  width: 150px;
-  height: 150px;
-  border-radius: 99%;
-  background-color: #FFF;
+.sec2 .skills .skill {
+  display: flex;
+  width: 420px;
+  padding: 50px 0;
+  border-radius: 8px;
+  background: #323946;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
-.sec2 .ability .web {
-  margin: 0 5px;
-  width: 150px;
-  height: 150px;
-  border-radius: 99%;
-  background-color: #FFF;
+.sec2 .skills .skill .circular-progress {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  background-color: fuchsia;
+  border-radius: 50%;
+  background: conic-gradient(rgba(73, 175, 231, 0.777) 3.6deg, #ededed 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sec2 .skills .skill .circular-progress::before {
+  content: "";
+  position: absolute;
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.sec2 .skills .skill .circular-progress .progress-value {
+  position: relative;
+  font-size: 40px;
+  font-weight: 600;
+  color: #4b94b4;
+}
+.sec2 .skills .skill .text {
+  font-size: 30px;
+  font-weight: 500;
+  color: #FFF;
+  margin-top: 15px;
 }
 
 .sec4 {

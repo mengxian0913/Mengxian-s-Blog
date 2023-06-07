@@ -9,8 +9,40 @@ hamburger.addEventListener('click', function(){
 })
 
 arrow.addEventListener('click', function(){
+    const scrollToPosition = window.innerHeight * 91 / 100;
     window.scrollTo({
-        top: window.innerHeight,
+        top: scrollToPosition,
         behavior: 'smooth'
     });
+
+    progressStartValue = 0;
+    circle();
 })
+
+
+// sec2
+
+const circularProgress = document.querySelector(".circular-progress");
+const progressValue = document.querySelector(".progress-value");
+//parseInt(progressValue.innerHTML); 
+let progressStartValue = 0, progressEndValue = 70;
+const speed = 10;
+let progress_color = "rgba(73, 175, 231, 0.777)";
+
+
+function circle() {
+
+    progress = setInterval(() => {
+        progressStartValue++;
+        
+        progressValue.textContent = `${progressStartValue}%`;
+        circularProgress.style.background = `conic-gradient(${progress_color} ${progressStartValue * 3.6}deg, #ededed 0deg)`;
+        if(progressStartValue == progressEndValue){
+            clearInterval(progress);
+        }
+    
+    
+    }, speed); 
+
+    return;
+} 
