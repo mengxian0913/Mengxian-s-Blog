@@ -341,7 +341,14 @@ nav{
                 align-items: center;
                 justify-content: center;
 
-                &::before{
+                &::before{  
+                    
+                    transition: all .3s ease-in-out;
+
+                    &:hover{
+                        @include bgsetting(90%, auto, url(../../icon/webdesign.png), scroll, no-repeat, contain);
+                    }
+
                     content: "";
                     position: absolute;
                     height: 210px;

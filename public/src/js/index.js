@@ -34,10 +34,6 @@ for(var i=0;i<progressValue.length;i++){
     progressStartValue.push(0);
 }
 
-console.log("Hello1");
-for(var ii = 0; ii < 5; ii++){
-    setTimeout(() => console.log("Hello", ii), 1000)
-}
 
 let MAX_Progress_Value = -1;
 for(var i = 0; i<progressEndValue.length; i++){

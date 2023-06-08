@@ -273,12 +273,21 @@ nav .nav-container .hamburger.is-active:hover span {
   justify-content: center;
 }
 .sec2 .skills .skill .circular-progress::before {
+  transition: all 0.3s ease-in-out;
   content: "";
   position: absolute;
   height: 210px;
   width: 210px;
   border-radius: 50%;
   background-color: #fff;
+}
+.sec2 .skills .skill .circular-progress::before:hover {
+  width: 90%;
+  height: auto;
+  background: url(../../icon/webdesign.png);
+  background-size: contain;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
 }
 .sec2 .skills .skill .circular-progress .progress-value {
   position: relative;
