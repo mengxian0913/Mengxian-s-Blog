@@ -29,13 +29,47 @@ link2.forEach(function(element){
 });
 
 
-
+link1[1].addEventListener('click', ()=>{
+    circle();
+})
+link2[1].addEventListener('click', ()=>{
+    circle();
+})
 
 
 hamburger.addEventListener('click', function(){
     hamburger.classList.toggle('is-active');
     nav2_container.classList.toggle('is-active');
 })
+
+
+const section = document.querySelectorAll('section');
+
+function checkIfHitTop(){
+    for(let i = 0; i < section.length; i++){
+        var rect = section[i].getBoundingClientRect();
+        var Top = rect.top;
+        
+        if(Top <= window.innerHeight * 10 / 100 || (i == section.length-1 && Top <= window.innerHeight * 95 / 100)){
+            nowPosition.classList.toggle('is-active');
+            nowPosition2.classList.toggle('is-active');
+            nowPosition = link1[i];
+            nowPosition2 = link2[i];
+            nowPosition.classList.toggle('is-active');
+            nowPosition2.classList.toggle('is-active');
+        }
+
+    }
+}
+
+
+
+window.addEventListener('scroll', checkIfHitTop);
+
+
+
+
+
 
 arrow.addEventListener('click', function(){
     const scrollToPosition = window.innerHeight * 91 / 100;
@@ -93,3 +127,20 @@ function circle() {
 
     return;
 } 
+
+
+
+// 使用 fetch 函式獲取 Markdown 檔案的內容
+fetch('../posts/aboutme.md')
+.then(response => response.text())
+.then(markdown => {
+  // 使用 marked 函式將 Markdown 轉換為 HTML
+  var html = marked(markdown);
+
+  // 將轉換後的 HTML 插入到指定元素中
+  var markdownContent = document.getElementById('markdownContent');
+  markdownContent.innerHTML = html;
+})
+.catch(error => {
+  console.error('無法獲取 Markdown 檔案:', error);
+});

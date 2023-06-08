@@ -499,6 +499,111 @@ nav{
 }
 
 
+.sec4{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    footer{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        
+        .contact{
+            max-width: 80vw;
+            @media screen and(min-width: 830px){
+                max-width: 40vw;
+            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .mail{
+                margin: 10px 10px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                a img{
+                    width: 50px;
+                    margin-right: 8px;
+                }
+
+                p{
+                    font-weight: bold;
+                    font-size: 15px;
+                }
+            }
+
+            .whatsapp{
+                margin: 10px 10px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                a img{
+                    width: 50px;
+                    margin-right: 8px;
+                }
+
+                p{
+                    font-weight: bold;
+                    font-size: 15px;
+                }
+            }
+
+        }
+
+        .about{
+            max-width: 80vw;
+            @media screen and (min-width: 900px) {
+                max-width: 40vw;
+            }
+
+            article{
+                font-size: 20px;
+                padding: 20px;
+            }
+
+            .follow{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+                :nth-child(1){
+                    img{
+                        width: 50px;
+                    }
+                }
+
+                :nth-child(2){
+                    img{
+                        width: 50px;
+                    }
+                }
+                
+                :nth-child(3){
+                    img{
+                        width: 50px;
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 830px){
 
     nav .nav-container{
