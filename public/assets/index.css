@@ -298,7 +298,8 @@ nav .nav-container .hamburger.is-active:hover span {
   background-image: url(../../icon/webdesign.png);
   background-attachment: scroll;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-position: center;
+  background-size: 65% 65%;
   z-index: 1;
 }
 .sec2 .skills :nth-child(2) .circular-progress:hover::before {
@@ -306,7 +307,8 @@ nav .nav-container .hamburger.is-active:hover span {
   background-image: url(../../icon/deep-learning.png);
   background-attachment: scroll;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-position: center;
+  background-size: 80% 80%;
   z-index: 1;
 }
 .sec2 .skills :nth-child(3) .circular-progress:hover::before {
@@ -314,7 +316,8 @@ nav .nav-container .hamburger.is-active:hover span {
   background-image: url(../../icon/badminton-field.png);
   background-attachment: scroll;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-position: center;
+  background-size: 80% 80%;
   z-index: 1;
 }
 
@@ -456,13 +459,7 @@ nav .nav-container .hamburger.is-active:hover span {
   justify-content: space-evenly;
   align-items: center;
 }
-.sec4 footer .about .follow :nth-child(1) img {
-  width: 50px;
-}
-.sec4 footer .about .follow :nth-child(2) img {
-  width: 50px;
-}
-.sec4 footer .about .follow :nth-child(3) img {
+.sec4 footer .about .follow a img {
   width: 50px;
 }
 

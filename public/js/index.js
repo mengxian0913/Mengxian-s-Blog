@@ -67,10 +67,6 @@ function checkIfHitTop(){
 window.addEventListener('wheel', checkIfHitTop);
 
 
-
-
-
-
 arrow.addEventListener('click', function(){
     const scrollToPosition = window.innerHeight * 91 / 100;
     window.scrollTo({
