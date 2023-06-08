@@ -6,9 +6,9 @@ const hamburger = document.querySelector('.hamburger');
 const nav2_container = document.querySelector('.nav2-container');
 const arrow = document.querySelector('.arrow');
 
+
 let nowPosition = link1[0];
 nowPosition.classList.add('is-active');
-
 link1.forEach(function(element){
     element.addEventListener('click', function(){
         nowPosition.classList.toggle('is-active');
@@ -64,7 +64,7 @@ function checkIfHitTop(){
 
 
 
-window.addEventListener('scroll', checkIfHitTop);
+window.addEventListener('wheel', checkIfHitTop);
 
 
 
