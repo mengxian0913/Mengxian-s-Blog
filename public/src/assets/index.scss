@@ -341,17 +341,6 @@ nav{
                 align-items: center;
                 justify-content: center;
 
-                &:hover{
-                    ::before{
-                        background-color: rgb(135, 196, 205);
-                        background-image: url(../../icon/webdesign.png);
-                        background-attachment: scroll;
-                        background-repeat: no-repeat;
-                        background-size: contain;
-                        z-index: 10;
-                    }
-                    
-                }
 
                 &::before{  
                     content: "";
@@ -380,19 +369,60 @@ nav{
             }
         }
 
+        :nth-child(1){
+            .circular-progress{
+                &:hover{
+                    &::before{
+                        background-color: rgb(27, 73, 88);
+                        background-image: url(../../icon/webdesign.png);
+                        background-attachment: scroll;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+
+        :nth-child(2){
+            .circular-progress{
+                &:hover{
+                    &::before{
+                        background-color: rgb(27, 73, 88);
+                        background-image: url(../../icon/deep-learning.png);
+                        background-attachment: scroll;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+
+        :nth-child(3){
+            .circular-progress{
+                &:hover{
+                    &::before{
+                        background-color: rgb(27, 73, 88);
+                        background-image: url(../../icon/badminton-field.png);
+                        background-attachment: scroll;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+
     }
+
+
 }
 
 
 
 
-
-
-
-
-
-
-.sec4{
+.sec3{
     min-height: 100vh;
     height: auto;
     padding: 40px 0;

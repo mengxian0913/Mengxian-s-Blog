@@ -1,7 +1,36 @@
 const menu = document.querySelector('.menu');
+const link1 = menu.querySelectorAll('a');
+const menu2 = document.querySelector('.menu2');
+const link2 = menu2.querySelectorAll('a');
 const hamburger = document.querySelector('.hamburger');
 const nav2_container = document.querySelector('.nav2-container');
 const arrow = document.querySelector('.arrow');
+
+let nowPosition = link1[0];
+nowPosition.classList.add('is-active');
+
+link1.forEach(function(element){
+    element.addEventListener('click', function(){
+        nowPosition.classList.toggle('is-active');
+        nowPosition = element;
+        nowPosition.classList.toggle('is-active');
+    });
+});
+
+
+let nowPosition2 = link2[0];
+nowPosition2.classList.add('is-active');
+link2.forEach(function(element){
+    element.addEventListener('click', function(){
+        nowPosition2.classList.toggle('is-active');
+        nowPosition2 = element;
+        nowPosition2.classList.toggle('is-active');
+    });
+});
+
+
+
+
 
 hamburger.addEventListener('click', function(){
     hamburger.classList.toggle('is-active');
