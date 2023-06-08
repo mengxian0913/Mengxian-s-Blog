@@ -127,20 +127,3 @@ function circle() {
 
     return;
 } 
-
-
-
-// 使用 fetch 函式獲取 Markdown 檔案的內容
-fetch('../posts/aboutme.md')
-.then(response => response.text())
-.then(markdown => {
-  // 使用 marked 函式將 Markdown 轉換為 HTML
-  var html = marked(markdown);
-
-  // 將轉換後的 HTML 插入到指定元素中
-  var markdownContent = document.getElementById('markdownContent');
-  markdownContent.innerHTML = html;
-})
-.catch(error => {
-  console.error('無法獲取 Markdown 檔案:', error);
-});
