@@ -168,6 +168,7 @@ nav .nav-container .hamburger.is-active:hover span {
   height: 100vh;
   width: 100vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -195,7 +196,6 @@ nav .nav-container .hamburger.is-active:hover span {
   font-size: 1.5em;
 }
 .sec1 .arrow {
-  position: absolute;
   top: 90%;
   left: 50%;
   width: 40px;
@@ -400,13 +400,18 @@ nav .nav-container .hamburger.is-active:hover span {
   flex-wrap: wrap;
 }
 .sec4 footer .contact {
+  max-width: 80vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
+@media screen and (min-width: 830px) {
+  .sec4 footer .contact {
+    max-width: 40vw;
+  }
+}
 .sec4 footer .contact .mail {
-  width: 50%;
   margin: 10px 10px;
   display: flex;
   justify-content: flex-start;
@@ -421,7 +426,6 @@ nav .nav-container .hamburger.is-active:hover span {
   font-size: 15px;
 }
 .sec4 footer .contact .whatsapp {
-  width: 50%;
   margin: 10px 10px;
   display: flex;
   justify-content: flex-start;

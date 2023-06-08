@@ -226,6 +226,7 @@ nav{
     height: 100vh;
     width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -257,12 +258,10 @@ nav{
     }
 
     .arrow{
-        position: absolute;
         top: 90%;
         left: 50%;
         width: 40px;
         height: 40px;
-        // background-color: #8c38ff;
         transform: translate(-50%, 90%);
         cursor: pointer;
         display: flex;
@@ -514,7 +513,7 @@ nav{
         
         .contact{
             max-width: 80vw;
-            @media screen and(min-width: 830px){
+            @media screen and (min-width: 830px){
                 max-width: 40vw;
             }
             display: flex;
