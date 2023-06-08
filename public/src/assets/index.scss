@@ -341,20 +341,26 @@ nav{
                 align-items: center;
                 justify-content: center;
 
-                &::before{  
-                    
-                    transition: all .3s ease-in-out;
-
-                    &:hover{
-                        @include bgsetting(90%, auto, url(../../icon/webdesign.png), scroll, no-repeat, contain);
+                &:hover{
+                    ::before{
+                        background-color: rgb(135, 196, 205);
+                        background-image: url(../../icon/webdesign.png);
+                        background-attachment: scroll;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        z-index: 10;
                     }
+                    
+                }
 
+                &::before{  
                     content: "";
                     position: absolute;
                     height: 210px;
                     width: 210px;
                     border-radius: 50%;
                     background-color: #fff;
+                    transition: .1s ease-in-out;
                 }
 
                 .progress-value{

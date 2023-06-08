@@ -272,22 +272,22 @@ nav .nav-container .hamburger.is-active:hover span {
   align-items: center;
   justify-content: center;
 }
+.sec2 .skills .skill .circular-progress:hover ::before {
+  background-color: rgb(135, 196, 205);
+  background-image: url(../../icon/webdesign.png);
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 10;
+}
 .sec2 .skills .skill .circular-progress::before {
-  transition: all 0.3s ease-in-out;
   content: "";
   position: absolute;
   height: 210px;
   width: 210px;
   border-radius: 50%;
   background-color: #fff;
-}
-.sec2 .skills .skill .circular-progress::before:hover {
-  width: 90%;
-  height: auto;
-  background: url(../../icon/webdesign.png);
-  background-size: contain;
-  background-attachment: scroll;
-  background-repeat: no-repeat;
+  transition: 0.1s ease-in-out;
 }
 .sec2 .skills .skill .circular-progress .progress-value {
   position: relative;
