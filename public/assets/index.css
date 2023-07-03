@@ -396,68 +396,33 @@ nav .nav-container .hamburger.is-active:hover span {
   align-items: center;
 }
 .sec4 footer {
-  width: 100%;
+  width: 90vw;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
 }
-.sec4 footer .contact {
-  max-width: 80vw;
+.sec4 footer .about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.sec4 footer .about article {
+  max-width: 450px;
+  font-size: 20px;
+  padding: 20px;
+}
+.sec4 footer .about .follow {
+  max-width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-@media screen and (min-width: 830px) {
-  .sec4 footer .contact {
-    max-width: 40vw;
-  }
-}
-.sec4 footer .contact .mail {
-  margin: 10px 10px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.sec4 footer .contact .mail a img {
-  width: 50px;
-  margin-right: 8px;
-}
-.sec4 footer .contact .mail p {
-  font-weight: bold;
-  font-size: 15px;
-}
-.sec4 footer .contact .whatsapp {
-  margin: 10px 10px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.sec4 footer .contact .whatsapp a img {
-  width: 50px;
-  margin-right: 8px;
-}
-.sec4 footer .contact .whatsapp p {
-  font-weight: bold;
-  font-size: 15px;
-}
-.sec4 footer .about {
-  max-width: 80vw;
-}
-@media screen and (min-width: 900px) {
-  .sec4 footer .about {
-    max-width: 40vw;
-  }
-}
-.sec4 footer .about article {
-  font-size: 20px;
-  padding: 20px;
-}
-.sec4 footer .about .follow {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+.sec4 footer .about .follow a {
+  margin: 7px;
 }
 .sec4 footer .about .follow a img {
   width: 50px;
