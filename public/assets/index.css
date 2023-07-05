@@ -50,7 +50,7 @@ nav .nav-container {
   align-items: center;
 }
 nav .nav-container h1 {
-  font-size: 28px;
+  font-size: 16px;
   font-weight: 900;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -446,6 +446,9 @@ nav .nav-container .hamburger.is-active:hover span {
 }
 
 @media screen and (min-width: 830px) {
+  nav .nav-container h1 {
+    font-size: 28px;
+  }
   nav .nav-container .menu {
     display: block;
   }
