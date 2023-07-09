@@ -265,7 +265,7 @@ nav .nav-container .hamburger.is-active:hover span {
   justify-content: center;
   align-items: center;
   max-width: 550px;
-  font-size: 20px;
+  font-size: 16px;
   padding: 50px;
   background-color: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(10px);
@@ -463,6 +463,9 @@ nav .nav-container .hamburger.is-active:hover span {
   }
   nav .nav-container .hamburger {
     display: none;
+  }
+  .sec2 .about .about-me {
+    font-size: 20px;
   }
   .timeline::before {
     content: "";

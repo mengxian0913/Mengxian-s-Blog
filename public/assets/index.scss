@@ -11,6 +11,7 @@ $text_color: #FFF;
 $greenblue: rgba(12, 70, 103, 0.644);
 // $progress: rgba(58, 120, 168, 0.644);
 $progress: rgba(73, 175, 231, 0.777);
+$mobile_font_size: 16px;
 
  
 
@@ -340,7 +341,7 @@ nav{
             justify-content: center;
             align-items: center;
             max-width: 550px;    
-            font-size: 20px;
+            font-size: $mobile_font_size;
             padding: 50px;
             background-color: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
@@ -604,6 +605,10 @@ nav{
         .hamburger{
             display: none;
         }
+    }
+
+    .sec2 .about .about-me{
+        font-size: 20px;
     }
 
 
