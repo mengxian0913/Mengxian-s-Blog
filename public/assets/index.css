@@ -147,17 +147,17 @@ nav .nav-container .hamburger.is-active:hover span {
   padding: 0 10px;
   color: #FFF;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 20px;
   transition: 0.4s;
   padding: 8px 16px;
   border-radius: 99px;
 }
 .nav2-container .menu2 .box a.is-active, .nav2-container .menu2 .box a:hover {
-  background-color: #7FC0E6;
+  background-color: rgba(25, 134, 193, 0.687);
 }
 .nav2-container.is-active {
   top: 0;
-  transform: translateY(69px);
+  transform: translateY(65px);
 }
 
 .sec1 {
@@ -257,12 +257,13 @@ nav .nav-container .hamburger.is-active:hover span {
   flex-wrap: wrap;
 }
 .sec2 .about .about-me {
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 550px;
   font-size: 16px;
-  padding: 50px;
+  padding: 25px;
   background-color: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -308,6 +309,10 @@ nav .nav-container .hamburger.is-active:hover span {
   background-color: #fff;
   transition: 0.1s ease-in-out;
 }
+.sec2 .about .skills .skill .circular-progress:hover::before {
+  background: #FFF;
+  z-index: 0;
+}
 .sec2 .about .skills .skill .circular-progress .progress-value {
   position: relative;
   font-size: 30px;
@@ -320,7 +325,7 @@ nav .nav-container .hamburger.is-active:hover span {
   color: #FFF;
   margin-top: 15px;
 }
-.sec2 .about .skills :nth-child(1) .circular-progress:hover::before {
+.sec2 .about .skills :nth-child(1) .circular-progress::before {
   background-color: rgb(27, 73, 88);
   background-image: url(../icon/webdesign.png);
   background-attachment: scroll;
@@ -329,7 +334,7 @@ nav .nav-container .hamburger.is-active:hover span {
   background-size: 65% 65%;
   z-index: 1;
 }
-.sec2 .about .skills :nth-child(2) .circular-progress:hover::before {
+.sec2 .about .skills :nth-child(2) .circular-progress::before {
   background-color: rgb(27, 73, 88);
   background-image: url(../icon/deep-learning.png);
   background-attachment: scroll;
@@ -338,7 +343,7 @@ nav .nav-container .hamburger.is-active:hover span {
   background-size: 80% 80%;
   z-index: 1;
 }
-.sec2 .about .skills :nth-child(3) .circular-progress:hover::before {
+.sec2 .about .skills :nth-child(3) .circular-progress::before {
   background-color: rgb(27, 73, 88);
   background-image: url(../icon/badminton-field.png);
   background-attachment: scroll;
@@ -348,7 +353,7 @@ nav .nav-container .hamburger.is-active:hover span {
   z-index: 1;
 }
 
-.sec3 {
+.sec4 {
   min-height: 100vh;
   height: auto;
   padding: 40px 0;
@@ -357,26 +362,26 @@ nav .nav-container .hamburger.is-active:hover span {
   justify-content: center;
   background-color: #212121;
 }
-.sec3 .timeline {
+.sec4 .timeline {
   width: 80%;
   height: auto;
   max-width: 800px;
   margin: 0 auto;
   position: relative;
 }
-.sec3 .timeline ul {
+.sec4 .timeline ul {
   list-style: none;
 }
-.sec3 .timeline ul li {
+.sec4 .timeline ul li {
   background-color: rgba(99, 145, 158, 0.77);
   border-radius: 10px;
   margin-bottom: 20px;
   transition: all 0.5s ease-out;
 }
-.sec3 .timeline ul li:hover {
+.sec4 .timeline ul li:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.sec3 .timeline ul li a .timeline-photo {
+.sec4 .timeline ul li a .timeline-photo {
   width: 100%;
   height: auto;
   padding: 0 0 3px 0;
@@ -386,12 +391,12 @@ nav .nav-container .hamburger.is-active:hover span {
   overflow: hidden;
   border-radius: 10px;
 }
-.sec3 .timeline ul li a .timeline-photo img {
+.sec4 .timeline ul li a .timeline-photo img {
   width: auto;
   height: 35vh;
   border-radius: 10px;
 }
-.sec3 .timeline ul li a .timeline-content {
+.sec4 .timeline ul li a .timeline-content {
   color: #212121;
   width: 100%;
   background: rgba(100, 89, 95, 0.3);
@@ -402,7 +407,7 @@ nav .nav-container .hamburger.is-active:hover span {
   transform: translateX(-50%);
   border-radius: 10px;
 }
-.sec3 .timeline ul li a .timeline-content h1 {
+.sec4 .timeline ul li a .timeline-content h1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -411,42 +416,42 @@ nav .nav-container .hamburger.is-active:hover span {
   line-height: 30px;
   margin-bottom: 10px;
 }
-.sec3 .timeline ul li:last-child {
+.sec4 .timeline ul li:last-child {
   margin-bottom: 0;
 }
 
-.sec4 {
+.sec5 {
   width: 100%;
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.sec4 footer {
+.sec5 footer {
   width: 90vw;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
 }
-.sec4 footer .about {
+.sec5 footer .about {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
 }
-.sec4 footer .about .follow {
+.sec5 footer .about .follow {
   max-width: 400px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
 }
-.sec4 footer .about .follow a {
+.sec5 footer .about .follow a {
   margin: 7px;
 }
-.sec4 footer .about .follow a img {
+.sec5 footer .about .follow a img {
   width: 50px;
 }
 
@@ -461,6 +466,7 @@ nav .nav-container .hamburger.is-active:hover span {
     display: none;
   }
   .sec2 .about .about-me {
+    padding: 50px;
     font-size: 20px;
   }
   .timeline::before {
