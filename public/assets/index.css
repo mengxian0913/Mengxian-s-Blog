@@ -50,7 +50,7 @@ nav .nav-container {
   align-items: center;
 }
 nav .nav-container h1 {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 900;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -241,6 +241,15 @@ nav .nav-container .hamburger.is-active:hover span {
   background-color: #323946;
   width: 100vw;
   min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sec2 .title {
+  padding: 20px;
+  width: 200px;
+  text-transform: uppercase;
 }
 .sec2 .about {
   background-color: #323946;
@@ -305,7 +314,7 @@ nav .nav-container .hamburger.is-active:hover span {
 }
 .sec2 .about .skills .skill .circular-progress .progress-value {
   position: relative;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 600;
   color: #4b94b4;
 }
@@ -447,7 +456,7 @@ nav .nav-container .hamburger.is-active:hover span {
 
 @media screen and (min-width: 830px) {
   nav .nav-container h1 {
-    font-size: 28px;
+    font-size: 20px;
   }
   nav .nav-container .menu {
     display: block;

@@ -25,6 +25,8 @@ link2.forEach(function(element){
         nowPosition2.classList.toggle('is-active');
         nowPosition2 = element;
         nowPosition2.classList.toggle('is-active');
+        nav2_container.classList.remove('is-active');
+        hamburger.classList.remove('is-active');
     });
 });
 
