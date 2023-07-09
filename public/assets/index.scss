@@ -142,11 +142,6 @@ nav{
                 transform-origin: 0 0;
                 transition: .4s;
             }
-
-            &:hover span:nth-child(2){
-                transform: translateX(10px);
-                background-color: $babyblue; 
-            }
     
             &.is-active span:nth-child(1){
                 transform: translate(0px, -2px) rotate(45deg);
