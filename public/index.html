@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/index.css">
+    <link rel="stylesheet" href="./assets/index/index.css">
     <link rel="icon" href="./icon/cat.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>MengXian's Blog</title>
 </head>
 <body>
@@ -100,8 +101,26 @@
             
         </section>
 
-        <section class="sec5" id="projects">
-            
+        <section class="sec3" id="projects">
+                <div class="title">
+                    <h1>
+                        Projects
+                    </h1>
+                </div>
+                
+                <!-- 專案展示區開始 -->
+                <div id="project-section">
+                    <!-- 引入專案展示區的內容 -->
+                    <!-- 可以使用 JavaScript 或其他模板系統來動態載入內容 -->
+                    <!-- 例如：使用 jQuery 的 load() 方法動態載入 -->
+                    <script>
+                        $(function() {
+                            $("#project-section").load("./project-section.html");
+                        });
+                    </script>
+                </div>
+                <!-- 專案展示區結束 -->
+                
         </section>
         
         <section class="sec4" id="posts">
@@ -170,17 +189,13 @@
 
         <section class="sec5" id="info">
             <footer>
-                <div class="about">
-
-                    <div class="follow">
-                        <a href="https://www.instagram.com/meng_337/"><img src="./icon/instagram.png" alt="instagram-logo"></a>
-                        <!-- <a href="https://www.facebook.com/profile.php?id=100009040031215"><img src="./icon/facebook.png" alt="facebook-logo"></a> -->
-                        <a href="https://github.com/mengxian0913"><img src="./icon/github(1).png" alt="github-logo"></a>
-                        <a href = "mailto:mengxian0913@gmail.com"><img src="./icon/mail-inbox-app.png" alt="mail-logo"></a>
-                        <!-- <a href="tel: +8860917832213"><img src="./icon/whatsapp.png" alt="whatsapp-logo"></a> -->
-                        <!-- <a href="https://discordapp.com/users/8332"><img src="./icon/discord.png" alt="discord-logo"></a> -->
-                    </div>
-
+                <div class="follow">
+                    <a href="https://www.instagram.com/meng_337/"><img src="./icon/instagram.png" alt="instagram-logo"></a>
+                    <!-- <a href="https://www.facebook.com/profile.php?id=100009040031215"><img src="./icon/facebook.png" alt="facebook-logo"></a> -->
+                    <a href="https://github.com/mengxian0913"><img src="./icon/github(1).png" alt="github-logo"></a>
+                    <a href = "mailto:mengxian0913@gmail.com"><img src="./icon/mail-inbox-app.png" alt="mail-logo"></a>
+                    <!-- <a href="tel: +8860917832213"><img src="./icon/whatsapp.png" alt="whatsapp-logo"></a> -->
+                    <!-- <a href="https://discordapp.com/users/8332"><img src="./icon/discord.png" alt="discord-logo"></a> -->
                 </div>
             </footer>
         </section>
