@@ -1,3 +1,7 @@
+$des_color: rgba(87, 128, 171, 0.784);
+$bg-color: #1f242d;
+$second-bg-color: rgba(46, 96, 150, 0.784);
+
 :root{
     overflow-x: hidden;
 }
@@ -19,7 +23,10 @@
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
+        overflow: hidden;
+        border-radius: 10px;
         box-shadow: 5px 5px 20px black;
+        
         transition: all .3s ease-in-out;
         margin: 20px;
 
@@ -54,7 +61,7 @@
             width: 100%;
             flex: 55%;
             height: 100%;
-            background-color: rgba(87, 128, 171, 0.784);
+            background-color: $second-bg-color;
             padding: 10px;
 
             h3{

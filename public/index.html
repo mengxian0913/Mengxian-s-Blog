@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="./assets/index/index.css">
     <link rel="icon" href="./icon/cat.png" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <!-- Swiper CSS -->
+     <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+     <!-- CSS -->
+     <link rel="stylesheet" href="./assets/slide/slide.css">
     <title>MengXian's Blog</title>
 </head>
 <body>
@@ -115,7 +120,7 @@
                     <!-- 例如：使用 jQuery 的 load() 方法動態載入 -->
                     <script>
                         $(function() {
-                            $("#project-section").load("./project-section.html");
+                            $("#project-section").load("./project-slide.html");
                         });
                     </script>
                 </div>
@@ -124,7 +129,16 @@
         </section>
         
         <section class="sec4" id="posts">
-
+            <div id="posts-section">
+                <!-- 引入專案展示區的內容 -->
+                <!-- 可以使用 JavaScript 或其他模板系統來動態載入內容 -->
+                <!-- 例如：使用 jQuery 的 load() 方法動態載入 -->
+                <script>
+                    $(function() {
+                        // $("#posts-section").load("");
+                    });
+                </script>
+            </div>
             
         </section>
 
@@ -169,4 +183,9 @@
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
       </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>      
+
+    <!-- JavaScript -->
+    <script src="./js/slide.js"></script>
 </html>
