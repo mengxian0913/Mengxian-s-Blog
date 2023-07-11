@@ -179,7 +179,7 @@ nav .nav-container .hamburger.is-active:hover span {
   align-items: center;
 }
 .sec1 .home .ph-container {
-  height: 25vh;
+  height: 15vh;
   width: auto;
   border-radius: 100%;
   overflow: hidden;
@@ -472,6 +472,13 @@ nav .nav-container .hamburger.is-active:hover span {
   }
   nav .nav-container .hamburger {
     display: none;
+  }
+  .sec1 .home .ph-container {
+    height: 25vh;
+  }
+  .sec1 .home .ph-container img {
+    height: 100%;
+    width: auto;
   }
   .sec2 .about .about-me {
     padding: 50px;

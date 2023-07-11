@@ -239,7 +239,7 @@ nav{
         align-items: center; 
 
         .ph-container{
-            height: 25vh;
+            height: 15vh;
             width: auto;
             border-radius: 100%;
             overflow: hidden;
@@ -610,6 +610,20 @@ nav{
 
         .hamburger{
             display: none;
+        }
+    }
+
+    .sec1{
+        .home{
+            .ph-container{
+            
+                height: 25vh;
+                
+                img{
+                    height: 100%;
+                    width: auto;
+                }
+            }
         }
     }
 
