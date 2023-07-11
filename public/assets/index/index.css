@@ -381,6 +381,7 @@ nav .nav-container .hamburger.is-active:hover span {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #323946;
 }
 .sec5 footer {
   width: 80vw;
