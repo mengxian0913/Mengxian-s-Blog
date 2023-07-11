@@ -55,7 +55,7 @@
 
 .card-image{
     position: relative;
-    width: 300px;
+    width: 95%;
     height: auto;
     background: #FFF;
     /* padding: 3px; */
@@ -133,7 +133,7 @@
   background-color: #4070F4;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 860px) {
   .slide-content{
     margin: 0 10px;
   }
