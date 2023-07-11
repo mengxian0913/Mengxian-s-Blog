@@ -50,8 +50,10 @@
   background-color: rgba(87, 128, 171, 0.784);
   padding: 10px;
 }
-.project-section .project-card .depiction h1 {
+.project-section .project-card .depiction h3 {
   width: 100%;
+  border-bottom: gray 1px groove;
+  margin-bottom: 5px;
 }
 .project-section .project-card .depiction p {
   width: 100%;
@@ -73,6 +75,13 @@
 .project-section .project-card .depiction .button a {
   color: #FFF;
   font-size: 10px;
+}
+.project-section .project-card .depiction .button:hover {
+  background-color: rgba(39, 50, 93, 0.656);
+}
+.project-section .project-card .depiction p {
+  line-height: 25px;
+  font-size: 15px;
 }
 .project-section .project-card:hover {
   transform: translateY(-10px);

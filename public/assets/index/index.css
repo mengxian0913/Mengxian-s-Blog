@@ -370,70 +370,9 @@ nav .nav-container .hamburger.is-active:hover span {
 }
 
 .sec4 {
+  width: 100vw;
   min-height: 100vh;
-  height: auto;
-  padding: 40px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #212121;
-}
-.sec4 .timeline {
-  width: 80%;
-  height: auto;
-  max-width: 800px;
-  margin: 0 auto;
-  position: relative;
-}
-.sec4 .timeline ul {
-  list-style: none;
-}
-.sec4 .timeline ul li {
-  background-color: rgba(99, 145, 158, 0.77);
-  border-radius: 10px;
-  margin-bottom: 20px;
-  transition: all 0.5s ease-out;
-}
-.sec4 .timeline ul li:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.sec4 .timeline ul li a .timeline-photo {
-  width: 100%;
-  height: auto;
-  padding: 0 0 3px 0;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  overflow: hidden;
-  border-radius: 10px;
-}
-.sec4 .timeline ul li a .timeline-photo img {
-  width: auto;
-  height: 35vh;
-  border-radius: 10px;
-}
-.sec4 .timeline ul li a .timeline-content {
-  color: #212121;
-  width: 100%;
-  background: rgba(100, 89, 95, 0.3);
-  -webkit-backdrop-filter: blur(0.5px);
-          backdrop-filter: blur(0.5px);
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 10px;
-}
-.sec4 .timeline ul li a .timeline-content h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 25px;
-  font-weight: 500;
-  line-height: 30px;
-  margin-bottom: 10px;
-}
-.sec4 .timeline ul li:last-child {
-  margin-bottom: 0;
+  background-color: #323946;
 }
 
 .sec5 {
@@ -483,49 +422,5 @@ nav .nav-container .hamburger.is-active:hover span {
   .sec2 .about .about-me {
     padding: 50px;
     font-size: 20px;
-  }
-  .timeline::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 3px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: black;
-  }
-  .timeline ul li {
-    width: 50%;
-    margin-bottom: 50px;
-    position: relative;
-  }
-  .timeline ul li:hover:after {
-    background-color: rgb(123, 64, 116);
-  }
-  .timeline ul li:nth-child(odd) {
-    float: left;
-    clear: right;
-    transform: translateX(-30px);
-  }
-  .timeline ul li:nth-child(even) {
-    float: right;
-    clear: left;
-    transform: translateX(30px);
-  }
-  .timeline ul li::after {
-    content: "";
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    background-color: gray;
-    border-radius: 50%;
-    top: 0;
-  }
-  .timeline ul li:nth-child(odd)::after {
-    transform: translate(50%, -50%);
-    right: -30px;
-  }
-  .timeline ul li:nth-child(even)::after {
-    transform: translate(-50%, -50%);
-    left: -30px;
   }
 }/*# sourceMappingURL=index.css.map */
