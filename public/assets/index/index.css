@@ -190,7 +190,7 @@ nav .nav-container .hamburger.is-active:hover span {
 }
 .sec1 .home h2 {
   margin-top: 25px;
-  font-size: 1.5em;
+  font-size: 18px;
 }
 .sec1 .arrow {
   top: 90%;
@@ -373,6 +373,14 @@ nav .nav-container .hamburger.is-active:hover span {
   width: 100vw;
   min-height: 100vh;
   background-color: #1f242d;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.sec4 .title h1 {
+  padding: 20px;
+  text-transform: uppercase;
 }
 
 .sec5 {
@@ -430,6 +438,9 @@ nav .nav-container .hamburger.is-active:hover span {
   .sec1 .home .ph-container img {
     height: 100%;
     width: auto;
+  }
+  .sec1 .home h2 {
+    font-size: 22px;
   }
   .sec2 .about .about-me {
     padding: 50px;
