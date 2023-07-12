@@ -9,6 +9,8 @@ const arrow = document.querySelector('.arrow');
 
 let nowPosition = link1[0];
 nowPosition.classList.add('is-active');
+
+
 link1.forEach(function(element){
     element.addEventListener('click', function(){
         nowPosition.classList.toggle('is-active');
@@ -124,4 +126,4 @@ function circle() {
     }, speed); 
 
     return;
-} 
+}
