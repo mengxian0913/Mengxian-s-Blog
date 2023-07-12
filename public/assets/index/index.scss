@@ -355,18 +355,19 @@ nav{
             color: $dark;
             .skill{
                 display: flex;
-                width: 250px;
+                width: auto;
                 padding: 20px 0;
                 border-radius: 8px;
                 background: $second-bg-color;
                 flex-direction: column;
                 align-items: center;
                 justify-content: space-around;
+                margin: 0 20px 0 20px;
     
                 .circular-progress{
                     position: relative;
-                    height: 200px;
-                    width: 200px;
+                    height: 160px;
+                    width: 160px;
                     background-color: #f0ff;
                     border-radius: 50%;
                     background: conic-gradient($progress 3.6deg, #ededed 0deg);
@@ -378,8 +379,8 @@ nav{
                     &::before{  
                         content: "";
                         position: absolute;
-                        height: 168px;
-                        width: 168px;
+                        height: 135px;
+                        width: 135px;
                         border-radius: 50%;
                         background-color: #fff;
                         transition: .1s ease-in-out;
@@ -395,7 +396,7 @@ nav{
     
                     .progress-value{
                         position: relative;
-                        font-size: 30px;
+                        font-size: 20px;
                         font-weight: 600;
                         color: #4b94b4;
                     }
@@ -562,6 +563,22 @@ nav{
         padding: 50px;
         font-size: 20px;
     }
+
+    .sec2 .about .skills .skill .circular-progress{
+        width: 200px;
+        height: 200px;
+
+        &::before{
+            width: 168px;
+            height: 168px;
+        }
+
+        .progress-value{
+            font-size: 30px;
+        }
+    }
+
+
     
 }
 

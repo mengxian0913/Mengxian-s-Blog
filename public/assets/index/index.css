@@ -281,18 +281,19 @@ nav .nav-container .hamburger.is-active:hover span {
 }
 .sec2 .about .skills .skill {
   display: flex;
-  width: 250px;
+  width: auto;
   padding: 20px 0;
   border-radius: 8px;
   background: #323946;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  margin: 0 20px 0 20px;
 }
 .sec2 .about .skills .skill .circular-progress {
   position: relative;
-  height: 200px;
-  width: 200px;
+  height: 160px;
+  width: 160px;
   background-color: fuchsia;
   border-radius: 50%;
   background: conic-gradient(rgba(73, 175, 231, 0.777) 3.6deg, #ededed 0deg);
@@ -303,8 +304,8 @@ nav .nav-container .hamburger.is-active:hover span {
 .sec2 .about .skills .skill .circular-progress::before {
   content: "";
   position: absolute;
-  height: 168px;
-  width: 168px;
+  height: 135px;
+  width: 135px;
   border-radius: 50%;
   background-color: #fff;
   transition: 0.1s ease-in-out;
@@ -315,7 +316,7 @@ nav .nav-container .hamburger.is-active:hover span {
 }
 .sec2 .about .skills .skill .circular-progress .progress-value {
   position: relative;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 600;
   color: #4b94b4;
 }
@@ -423,5 +424,16 @@ nav .nav-container .hamburger.is-active:hover span {
   .sec2 .about .about-me {
     padding: 50px;
     font-size: 20px;
+  }
+  .sec2 .about .skills .skill .circular-progress {
+    width: 200px;
+    height: 200px;
+  }
+  .sec2 .about .skills .skill .circular-progress::before {
+    width: 168px;
+    height: 168px;
+  }
+  .sec2 .about .skills .skill .circular-progress .progress-value {
+    font-size: 30px;
   }
 }/*# sourceMappingURL=index.css.map */
