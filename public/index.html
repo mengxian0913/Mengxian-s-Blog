@@ -23,10 +23,9 @@
 
                 <div class="menu">
                     <a href="#home">home</a>
-                    <a href="#skills">about</a>
-                    <a href="#projects">projects</a>
                     <a href="#posts">posts</a>
-                    <a href="#info">info</a>
+                    <a href="#projects">projects</a>
+                    <a href="#skills">about</a>
                 </div>
 
                 <div class="hamburger">
@@ -40,10 +39,9 @@
         <div class="nav2-container">
             <div class="menu2">
                 <div class="box"><a href="#home">home</a></div>
-                <div class="box"><a href="#skills">about</a></div>
-                <div class="box"><a href="#projects">projects</a></div>
                 <div class="box"><a href="#posts">posts</a></div>
-                <div class="box"><a href="#info">info</a></div>
+                <div class="box"><a href="#projects">projects</a></div>
+                <div class="box"><a href="#skills">about</a></div>
             </div>
         </div>
 
@@ -62,6 +60,46 @@
                 </div>
         </section>
         
+
+        <section class="sec4" id="posts">
+            <div id="posts-section">
+                <!-- 引入專案展示區的內容 -->
+                <!-- 可以使用 JavaScript 或其他模板系統來動態載入內容 -->
+                <!-- 例如：使用 jQuery 的 load() 方法動態載入 -->
+                <script>
+                    $(function() {
+                        // $("#posts-section").load("");
+                    });
+                </script>
+            </div>
+            
+        </section>
+
+
+
+        <section class="sec3" id="projects">
+            <div class="title">
+                <h1>
+                    Projects
+                </h1>
+            </div>
+            
+            <!-- 專案展示區開始 -->
+            <div id="project-section">
+                <!-- 引入專案展示區的內容 -->
+                <!-- 可以使用 JavaScript 或其他模板系統來動態載入內容 -->
+                <!-- 例如：使用 jQuery 的 load() 方法動態載入 -->
+                <script>
+                    $(function() {
+                        $("#project-section").load("./project-slide.html");
+                    });
+                </script>
+            </div>
+            <!-- 專案展示區結束 -->
+            
+         </section>
+
+
         <section class="sec2" id="skills">
 
             <h1 class="title">
@@ -106,44 +144,11 @@
             
         </section>
 
-        <section class="sec3" id="projects">
-                <div class="title">
-                    <h1>
-                        Projects
-                    </h1>
-                </div>
-                
-                <!-- 專案展示區開始 -->
-                <div id="project-section">
-                    <!-- 引入專案展示區的內容 -->
-                    <!-- 可以使用 JavaScript 或其他模板系統來動態載入內容 -->
-                    <!-- 例如：使用 jQuery 的 load() 方法動態載入 -->
-                    <script>
-                        $(function() {
-                            $("#project-section").load("./project-slide.html");
-                        });
-                    </script>
-                </div>
-                <!-- 專案展示區結束 -->
-                
-        </section>
         
-        <section class="sec4" id="posts">
-            <div id="posts-section">
-                <!-- 引入專案展示區的內容 -->
-                <!-- 可以使用 JavaScript 或其他模板系統來動態載入內容 -->
-                <!-- 例如：使用 jQuery 的 load() 方法動態載入 -->
-                <script>
-                    $(function() {
-                        // $("#posts-section").load("");
-                    });
-                </script>
-            </div>
-            
-        </section>
 
 
-        <section class="sec5" id="info">
+
+        <section class="sec5">
             <footer>
                 <div class="follow">
                     <a href="https://www.instagram.com/meng_337/"><img src="./icon/Instagram_icon-icons.com_66804.ico" alt="instagram-logo"></a>
@@ -155,6 +160,14 @@
                     <!-- <a href="https://discordapp.com/users/8332"><img src="./icon/discord.png" alt="discord-logo"></a> -->
                 </div>
             </footer>
+
+            <span></span>
+
+            <div class="copyright">
+                <p>
+                    Copyright © 2023 Yang, Meng-Xian. All rights reserved.
+                </p>
+            </div>
         </section>
 
     </div>

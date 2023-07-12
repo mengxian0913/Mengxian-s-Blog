@@ -244,7 +244,6 @@ nav .nav-container .hamburger.is-active:hover span {
 }
 .sec2 .title {
   padding: 20px;
-  width: 200px;
   text-transform: uppercase;
 }
 .sec2 .about {
@@ -380,8 +379,9 @@ nav .nav-container .hamburger.is-active:hover span {
   min-height: 30vh;
   width: 100vw;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
   background-color: #323946;
 }
 .sec5 footer {
@@ -402,6 +402,16 @@ nav .nav-container .hamburger.is-active:hover span {
 }
 .sec5 footer .follow a img {
   width: 50px;
+}
+.sec5 span {
+  width: 80vw;
+  border-bottom: #EFEFEF 1px solid;
+}
+.sec5 .copyright {
+  position: relative;
+  top: 10px;
+  font-size: 10px;
+  font-weight: 400;
 }
 
 @media screen and (min-width: 830px) {

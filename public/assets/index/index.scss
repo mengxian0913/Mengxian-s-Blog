@@ -316,7 +316,6 @@ nav{
 
     .title{
         padding: 20px;
-        width: 200px;
         text-transform: uppercase;
     }
     
@@ -491,8 +490,9 @@ nav{
     min-height: 30vh;
     width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    flex-direction: column;
     background-color: $second-bg-color;
     
     footer{
@@ -516,6 +516,18 @@ nav{
                 width: 50px;
             }
         }
+    }
+
+    span{
+        width: 80vw;
+        border-bottom: #EFEFEF 1px solid;
+    }
+
+    .copyright{
+        position: relative;
+        top: 10px;
+        font-size: 10px;
+        font-weight: 400;
     }
 }
 
