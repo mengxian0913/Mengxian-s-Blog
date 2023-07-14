@@ -33,10 +33,10 @@ link2.forEach(function(element){
 });
 
 
-link1[1].addEventListener('click', ()=>{
+link1[3].addEventListener('click', ()=>{
     circle();
 })
-link2[1].addEventListener('click', ()=>{
+link2[3].addEventListener('click', ()=>{
     circle();
 })
 
